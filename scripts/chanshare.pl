@@ -85,7 +85,7 @@ sub cmd_chanshare {
 	my @list = ();
 	next if ($nick->{nick} eq $mynick);
 
-	@list = @{$channicks{$nickhost}} if (@{$channicks{$nickhost}});
+        @list = @{$channicks{$nickhost}} if exists $channicks{$nickhost} and (@{$channicks{$nickhost}});
 #	Irssi::print($nickhost);
 	push @list, $channel->{name};
 	$channicks{$nickhost} = [@list];
