@@ -26,10 +26,10 @@
   description: "Automaticaly \x02/msg ident NS yourpassword\x02 when you connect or services come back from death"
   filename: UNIBG-autoident.pl
   license: 'Public Domain'
-  modified: '2003-01-25 02:35:40'
+  modified: '2018-09-10 18:52:09'
   name: UNIBG-autoident
   url: http://not.available.yet/
-  version: '0.1'
+  version: '0.2'
 -
   authors: 'Tamas SZERB'
   contact: toma@rulez.org
@@ -123,11 +123,11 @@
   description: 'Adds a permanent advanced window list on the right or in a status bar.'
   filename: adv_windowlist.pl
   license: 'GNU GPLv2 or later'
-  modified: '2017-05-12 10:45:31'
+  modified: '2018-09-27 10:51:31'
   modules: Text::CharWidth
   name: adv_windowlist
   url: http://anti.teamidiot.de/
-  version: '1.5'
+  version: '1.6'
 -
   authors: BC-bd
   commands: ai
@@ -1218,6 +1218,17 @@
   name: ctrlact
   version: '1.2'
 -
+  authors: 'Irssi staff'
+  commands: cubes
+  contact: staff@irssi.org
+  description: '256 colour test script for Irssi.'
+  filename: cubes.pl
+  license: 'Public Domain'
+  modified: '2018-10-02 16:00:23'
+  name: cubes
+  url: https://irssi.org
+  version: '1.0'
+-
   authors: "Maciek 'fahren' Freudenheim"
   commands: cwho
   contact: fahren@bochnia.pl
@@ -1237,16 +1248,6 @@
   name: dancer_forwardfix.pl
   url: http://irssi.hauwaerts.be/dancer_forwardfix.pl
   version: '0.03'
--
-  authors: 'Geert Hauwaerts'
-  contact: geert@irssi.org
-  description: 'This script hides the 477 numerics from the dancer IRCd.'
-  filename: dancer_hide_477.pl
-  license: 'GNU General Public License'
-  modified: '2004-03-12 19:46:24'
-  name: dancer_hide_477.pl
-  url: http://irssi.hauwaerts.be/dancer_hide_477.pl
-  version: '0.01'
 -
   authors: 'Clemens Heidinger'
   commands: dau
@@ -1484,6 +1485,18 @@
   name: dr_who
   url: http://beaglebros.com
   version: '1.0'
+-
+  authors: bw1
+  commands: ddg
+  contact: bw1@aol.at
+  description: 'search by https://duckduckgo.com/html/'
+  filename: duckduckgo.pl
+  license: lgplv3
+  modified: '2018-09-20 21:18:10'
+  modules: 'HTML::Entities LWP::UserAgent URI::Escape'
+  name: duckduckgo
+  url: http://scripts.irssi.org
+  version: '0.01'
 -
   authors: 'Espen Holm Nilsen'
   contact: holm@blackedge.org
@@ -3244,7 +3257,7 @@
   description: 'colourise nicks'
   filename: nickcolor_expando.pl
   license: 'GPL v2'
-  modified: '2017-07-05 13:52:36'
+  modified: '2018-09-06 14:56:14'
   name: nickcolor_expando
   version: 0.4.0
 -
@@ -3271,10 +3284,10 @@
   description: 'draws a nicklist to another terminal, or at the right of your irssi in the same terminal'
   filename: nicklist.pl
   license: GPLv2
-  modified: '2018-06-01 11:21:18'
+  modified: '2018-10-02 22:23:16'
   name: nicklist
   url: http://wouter.coekaerts.be/irssi
-  version: 0.4.11
+  version: 0.4.12
 -
   authors: c0ffee
   commands: 'nickmix stopmix'
@@ -4452,11 +4465,11 @@
   description: 'A spell checker for irssi.  Hit alt+s and your line will echoed to the active window with mistakes underlined and suggestions noted.  /spell is also provided.  Requires Lingua::Ispell and Ispell.'
   filename: spell.pl
   license: MIT
-  modified: '2006-01-02 17:02:12'
+  modified: '2018-09-06 19:23:44'
   modules: Lingua::Ispell
   name: spell
   url: http://home.cc.umanitoba.ca/~umkowa17/
-  version: '1.0'
+  version: '1.1'
 -
   authors: 'Jakub Jankowski'
   contact: shasta@toxcorp.com
@@ -4691,9 +4704,9 @@
   contact: 'vague!#irssi@freenode on irc'
   description: 'Toggle hidden levels on per window basis'
   filename: toggle_hidelevel.pl
-  modified: '2018-03-21 22:29:28'
+  modified: '2018-10-12 16:07:42'
   name: toggle_hidelevel
-  version: 0.3.2
+  version: 0.5.1
 -
   authors: bcattaneo
   commands: toilet
@@ -4754,11 +4767,11 @@
   description: 'Shows a bar where you have last read a window.'
   filename: trackbar.pl
   license: 'GNU General Public License'
-  modified: '2018-02-03 22:23:52'
+  modified: '2018-09-13 10:18:32'
   modules: Text::CharWidth
   name: trackbar
   url: http://www.pfoe.be/~peter/trackbar/
-  version: '2.5'
+  version: '2.6'
 -
   HIDDEN: '1'
   description: 'This script has been replaced with trackbar.pl.'
@@ -4853,10 +4866,10 @@
   description: 'Animated Topic bar.'
   filename: twtopic.pl
   license: 'Public Domain'
-  modified: '2017-04-07 16:34:31'
+  modified: '2018-09-08 10:00:39'
   name: twtopic.pl
   url: "http://irssi.darktalker.net\n"
-  version: '1.01'
+  version: '1.02'
 -
   authors: 'Juerd (first version: Timo Sirainen, additions by: Qrczak)'
   contact: 'tss@iki.fi, juerd@juerd.nl, qrczak@knm.org.pl'
@@ -4989,6 +5002,16 @@
   name: urlplot
   url: http://www.geekmind.net
   version: '1.2'
+-
+  authors: zdleaf
+  contact: leaf@zincldn.co.uk
+  description: 'Print urls to window named "urls"'
+  filename: urlwindow.pl
+  license: 'Public Domain'
+  modified: '2018-09-16 11:31:07'
+  name: urlwindow
+  url: http://irssi.org/
+  version: '1.1'
 -
   authors: 'David Leadbeater, Timo Sirainen, Georg Lukas'
   contact: 'dgl@dgl.cx, tss@iki.fi, georg@boerde.de'
