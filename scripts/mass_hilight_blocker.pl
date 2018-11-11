@@ -39,17 +39,17 @@ sub sig_printtext {
     {
       my $server  =  $dest->{server};	# get server and channel for target
       my $channel =  $server->channel_find($dest->{target});
-      
+
       foreach my $nick ($channel->nicks()) # walk through nicks
         {
           $nick = $nick->{nick};
           if ($text =~ /\Q$nick/)		# does line contain this nick?
             {$num_nicks++;}		# then increase counter
         }
-      
+
       if ($num_nicks>=($max_num_nicks)) # all criteria match?
         {
-          $window->print($text, MSGLEVEL_PUBLIC);	# inform user
+          $window->print($text, MSGLEVEL_CLIENTCRAP);	# inform user
           $window->print('mass-hilighting in above message ('.$num_nicks.' nicks)',MSGLEVEL_CLIENTCRAP);
           Irssi::signal_stop();		# don't process any further
         }
@@ -59,5 +59,5 @@ sub sig_printtext {
 # tell irssi to use this and initialize variable if necessary
 
 Irssi::signal_add_first('print text', 'sig_printtext');
-Irssi::settings_add_int('misc','mass_hilight_threshold',3);
+Irssi::settings_add_int('misc','mass_hilight_threshold',5);
 
