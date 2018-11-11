@@ -77,6 +77,7 @@ sub cmd_sysinfo {
  if($osm =~ /^armv4l$/)	 { $armv4l	= 1; }
  if($osm =~ /^i586$/)	 { $i586	= 1; }
  if($osm =~ /^i686$/)	 { $i686	= 1; }
+ if($osm =~ /^x86_64$/)	 { $i686	= 1; }
  if($osm =~ /^ia64$/)	 { $ia64	= 1; }
  if($osm =~ /^mips$/)	 { $mips	= 1; }
  if($osm =~ /^parisc64$/){ $parisc64	= 1; }
