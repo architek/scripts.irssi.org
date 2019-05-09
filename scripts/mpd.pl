@@ -41,7 +41,7 @@ use Irssi;
 
 use vars qw{$VERSION %IRSSI %MPD};
 
-$VERSION = "0.8";
+$VERSION = "0.9";
 %IRSSI = (
           name        => 'mpd',
           authors     => 'Erik Scharwaechter, Tobias Böhm, Mikkel Kroman',
