@@ -10,14 +10,14 @@ use Irssi::TextUI;
 use Data::Dumper;
 use vars qw($VERSION %IRSSI);
 
-$VERSION = "0.5.1";
+$VERSION = "0.6.0";
 %IRSSI = (
           authors       => 'Jari Matilainen',
           contact       => 'vague!#irssi@freenode on irc',
           name          => 'toggle_hidelevel',
           description   => 'Toggle hidden levels on per window basis',
           licence       => "GPLv2",
-          changed       => "12.10.2018 16:00 CEST"
+          changed       => "20.03.2019 13:00 CET"
 );
 
 my $windows;
@@ -44,14 +44,20 @@ sub set_mode {
   my $levels = Irssi::bits2level($lvlbits);
   my $val;
 
-  $levels = Irssi::settings_get_str('window_default_hidelevel') if $mode && !$levels;
+  $levels = Irssi::settings_get_str('window_default_hidelevel') if $mode && !$lvlbits;
 
   $val = $levels =~ s/(\w+)/sprintf("%s%s", $mode ? '+' : '-', $1)/gre;
   $windows->{$win->{refnum}}{mode} = $mode;
 
-  if($val) {
-    $processing += 1;
-    $win->command("^window hidelevel $val");
+  if($win->view->can('set_hidden_level')) {
+    $win->view->set_hidden_level(Irssi::level2bits($val));
+    $win->view->redraw;
+  }
+  else {
+    if($val) {
+      $processing += 1;
+      $win->command("^window hidelevel $val");
+    }
   }
 }
 
@@ -92,12 +98,12 @@ Irssi::command_bind('window togglelevel' => sub {
 Irssi::command_bind_last('window hidelevel' => sub {
   my ($args, $server, $witem) = @_;
 
-  if($processing) {
+  return unless $witem;
+
+  if(!$witem->window->view->can('set_hidden_level') && $processing) {
     $processing -= 1;
     return;
   }
-
-  return unless $witem;
 
   if($args) {
     my $levels = $witem->window->view->{hidden_level};

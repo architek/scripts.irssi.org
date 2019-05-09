@@ -15,10 +15,10 @@
   description: 'Controls Audacious2 and MOCP from Irssi'
   filename: Cirssi.pl
   license: 'GNU General Public License'
-  modified: '2009-08-14 22:56:45'
+  modified: '2019-01-20 23:16:01'
   name: 'Consolidate Irssi Player'
-  url: http://bazaar.launchpad.net/~compengi/%2Bjunk/Cirssi/annotate/head%3A/Cirssi.pl
-  version: 2.0.0
+  url: http://git.peersnode.net/
+  version: '2.2'
 -
   authors: 'Doncho N. Gunchev'
   commands: id
@@ -123,11 +123,11 @@
   description: 'Adds a permanent advanced window list on the right or in a status bar.'
   filename: adv_windowlist.pl
   license: 'GNU GPLv2 or later'
-  modified: '2018-09-27 10:51:31'
+  modified: '2019-05-01 17:10:23'
   modules: Text::CharWidth
   name: adv_windowlist
   url: http://anti.teamidiot.de/
-  version: '1.6'
+  version: '1.8'
 -
   authors: BC-bd
   commands: ai
@@ -306,10 +306,10 @@
   description: 'Automatically goes  away after defined inactivity'
   filename: autoaway.pl
   license: BSD
-  modified: '2016-04-26 17:34:00'
+  modified: '2018-12-02 10:47:21'
   name: 'Automagic away setting'
   url: http://www.flamingpackets.net/~vizzie/irssi/
-  version: '0.4'
+  version: '0.5'
 -
   authors: 'Peder Stray'
   contact: peder@ninja.no
@@ -327,10 +327,10 @@
   description: 'Automatically clears pending input when you are away.'
   filename: autoclearinput.pl
   license: GPLv3
-  modified: '2014-08-01 15:27:47'
+  modified: '2019-02-11 10:29:06'
   name: AutoClearInput
   url: https://github.com/tslocum/irssi-scripts
-  version: 1.0.1
+  version: 1.0.2
 -
   authors: 'Marcin Rozycki'
   commands: autocycle
@@ -345,13 +345,13 @@
 -
   authors: 'David Leadbeater'
   contact: dgl@dgl.cx
-  description: 'does an autolimit for a channel, set variables in the script'
+  description: 'does an autolimit for a channel'
   filename: autolimit.pl
   license: 'GNU GPLv2 or later'
-  modified: '2014-10-17 18:30:46'
+  modified: '2019-02-12 20:48:07'
   name: autolimit
   url: http://irssi.dgl.cx/
-  version: '1.00'
+  version: '1.01'
 -
   authors: Juerd
   contact: '#####@juerd.nl'
@@ -457,9 +457,9 @@
   description: autovoice
   filename: autovoice.pl
   license: GPL
-  modified: '2008-05-22 01:47:56'
+  modified: '2019-01-14 16:25:50'
   name: autovoice
-  version: '0.05'
+  version: '0.06'
 -
   authors: Nei
   contact: 'Nei @ anti@conference.jabber.teamidiot.de'
@@ -656,9 +656,9 @@
   description: 'Only beep when you are away'
   filename: beepaway.pl
   license: BSD
-  modified: '2008-05-17 17:39:11'
+  modified: '2018-12-23 22:07:33'
   name: beepaway
-  version: '2003011501'
+  version: '2018122301'
 -
   authors: Nei
   commands: key_insert_before_space
@@ -714,13 +714,13 @@
   authors: 'Tijmen "timing" Ruizendaal'
   commands: blist
   contact: tijmen.ruizendaal@gmail.com
-  description: '/blist <all|online|offline|away> <word>,  greps <word> from blist for bitlbee'
+  description: "/blist <all|online|offline|away|word> <word>,\tgreps <word> from blist for bitlbee"
   filename: bitlbee_blist.pl
   license: GPLv2
-  modified: '2006-10-27 00:00:00'
+  modified: '2013-12-09 23:09:23'
   name: bitlbee_blist
   url: http://the-timing.nl/stuff/irssi-bitlbee
-  version: '0.4'
+  version: '0.5'
 -
   authors: 'Ævar Arnfjörð Bjarmason'
   contact: avarab@gmail.com
@@ -767,11 +767,11 @@
   description: "Replace Irssi's timestamps with those sent by BitlBee"
   filename: bitlbee_timestamp.pl
   license: GPLv2
-  modified: '2010-05-01 00:00:00'
+  modified: '2019-03-15 11:01:56'
   modules: DateTime
   name: bitlbee_timestamp
   url: http://the-timing.nl/stuff/irssi-bitlbee
-  version: '0.5'
+  version: '0.6'
 -
   authors: 'Tijmen "timing" Ruizendaal, Matt "f0rked" Sparks'
   commands: db_typing
@@ -949,17 +949,17 @@
   name: chanpeak
   version: 0.2.2
 -
-  authors: "Stefan 'tommie' Tomanek"
+  authors: "Stefan 'tommie' Tomanek, bw1"
   commands: chansearch
-  contact: stefan@pico.ruhr.de
+  contact: bw1@aol.at
   description: 'searches for specific channels'
   filename: chansearch.pl
   license: GPLv2
-  modified: '2008-05-17 17:39:11'
-  modules: LWP::UserAgent
+  modified: '2019-03-12 17:15:57'
+  modules: 'HTML::Entities LWP::UserAgent'
   name: ChanSearch
   url: http://scripts.irssi.org/
-  version: '20021019'
+  version: '2.0'
 -
   authors: "Timo 'cras' Sirainen"
   commands: chanshare
@@ -967,10 +967,10 @@
   description: '/CHANSHARE - display people who are in more than one channel with you'
   filename: chanshare.pl
   license: 'Public Domain'
-  modified: '2014-10-17 20:34:00'
+  modified: '2019-02-13 21:13:53'
   name: 'chan share'
   url: http://irssi.org/
-  version: '0.3'
+  version: '0.4'
 -
   authors: 'Peder Stray'
   commands: chansort
@@ -1069,6 +1069,16 @@
   name: clones_scanner
   url: http://reirssi.wordpress.com
   version: '1.6'
+-
+  authors: Nei
+  contact: 'Nei @ anti@conference.jabber.teamidiot.de'
+  description: 'Indicator for input prompt if you are inputting a command or text'
+  filename: cmdind.pl
+  license: 'GNU GPLv2 or later'
+  modified: '2018-12-18 17:40:02'
+  name: cmdind
+  url: http://anti.teamidiot.de/
+  version: '1.1'
 -
   authors: 'Jari Matilainen, init[1]@irc.freenode.net'
   commands: cmp
@@ -1260,15 +1270,15 @@
   url: http://dau.pl/
   version: 2.4.3
 -
-  authors: ak5
+  authors: 'ak5, bw1'
   contact: meister@hq.kroenk.remove-this-because-of-spam.de
   description: 'This script sets dcc_own_ip when starting a DCC send or chat.set dcc_ip_interface to your external interface, f.e. ppp0.If you are connecting though a router, set it to "router"'
   filename: dcc_ip.pl
   license: 'Public Domain'
-  modified: '2014-10-17 20:34:00'
+  modified: '2019-02-17 21:08:42'
   name: dcc_ip
   url: http://hq.kroenk.de/?gnu/irssi
-  version: '0.5'
+  version: '0.6'
 -
   authors: 'Peder Stray'
   contact: peder@ninja.no
@@ -1344,17 +1354,6 @@
   url: http://www.garion.org/irssi/
   version: '1.2'
 -
-  authors: 'Benjamin Reed'
-  contact: ranger@befunk.com
-  description: 'Logs URLs and posts them to del.icio.us'
-  filename: deliciousurl.pl
-  license: GPLv2
-  modified: '2014-10-17 20:34:00'
-  modules: 'Log::Dispatch Log::Dispatch::File Net::Delicious URI::Find::Rule'
-  name: deliciousurl
-  url: http://ranger.befunk.com/
-  version: '0.5'
--
   authors: 'Felipe F. Tonello'
   contact: eu@felipetonello.com
   description: 'Sends notification using the Desktop Notifications Specification.'
@@ -1391,9 +1390,9 @@
   description: 'A concise dice simulator for channels.'
   filename: dice_concise.pl
   license: 'GNU GPL v2 or later'
-  modified: '2014-10-30 17:21:08'
+  modified: '2019-03-03 11:25:30'
   name: dice_concise
-  version: 0.1.5
+  version: 0.1.6
 -
   authors: 'Juerd (first version: Timo Sirainen)'
   contact: juerd@juerd.nl
@@ -1440,10 +1439,10 @@
   description: '/DNS <nick>|<host>|<ip> ...'
   filename: dns.pl
   license: 'Public Domain'
-  modified: '2002-03-04 22:47:00'
+  modified: '2019-01-24 16:31:43'
   name: dns
   url: http://irssi.org/
-  version: 2.1.1
+  version: '2.2'
 -
   authors: 'Pieter-Bas IJdens'
   contact: irssi-scripts@nospam.mi4.org.uk
@@ -1514,9 +1513,9 @@
   description: 'This script allow advanced parametrization of the /list command. Accepted parameters are -minusers <#users> and -maxusers <#users>. '
   filename: elist.pl
   license: GPLv2
-  modified: '2008-05-25 14:42:28'
+  modified: '2019-05-09 10:26:14'
   name: 'Enanched LIST'
-  version: '1.0'
+  version: '1.1'
 -
   authors: 'Johan "Ion" Kiviniemi'
   contact: 'ion at hassers.org'
@@ -1554,13 +1553,13 @@
   authors: PrincessLeia2
   contact: 'lyz\@princessleia.com '
   description: 'a script for accessing an email mysql database through irc'
-  filename: emaildb1.0.pl
+  filename: emaildb.pl
   license: 'GNU GPL v2 or later'
-  modified: '2014-10-17 22:54:13'
+  modified: '2019-02-18 23:01:29'
   modules: DBI
   name: emaildb
   url: http://www.princessleia.com/
-  version: '1.0'
+  version: '1.2'
 -
   authors: 'Ilkka Pale'
   commands: 'emo emolist'
@@ -1617,10 +1616,10 @@
   description: 'This script sends fake ctcp replies to a client using a fake ctcp list.'
   filename: fakectcp.pl
   license: 'GNU General Public License'
-  modified: '2014-10-17 22:54:13'
+  modified: '2018-09-17 14:39:59'
   name: fakectcp.pl
   url: http://irssi.hauwaerts.be/default.pl
-  version: '1.03'
+  version: '1.04'
 -
   authors: 'Stefan Jakobs'
   commands: fcountry
@@ -1649,10 +1648,10 @@
   description: 'A command to output content of files in various ways'
   filename: file.pl
   license: 'GNU GPLv2 or later'
-  modified: '2014-10-17 22:54:13'
+  modified: '2019-02-19 16:17:57'
   name: file.pl
   url: http://irssi.dgl.cx/
-  version: '1'
+  version: '1.1'
 -
   authors: 'Erkki Seppälä'
   commands: find
@@ -1769,16 +1768,6 @@
   url: http://irssi.org/scripts/
   version: '2003071904'
 -
-  authors: 'Geert Hauwaerts'
-  contact: geert@irssi.org
-  description: 'This script will filter some Freenode IRCD (Dancer) servernotices.'
-  filename: freenode_filter.pl
-  license: 'GNU General Public License'
-  modified: '2003-09-17 23:00:11'
-  name: default.pl
-  url: http://irssi.hauwaerts.be/freenode_filter.pl
-  version: '0.06'
--
   authors: 'Peder Stray'
   commands: 'addfriend friends'
   contact: peder@ninja.no
@@ -1882,9 +1871,9 @@
   description: 'Implements /go command that activates a window given a name/partial name. It features a nice completion.'
   filename: go.pl
   license: 'GPLv2 or later'
-  modified: '2017-02-02 02:40:44'
+  modified: '2019-02-28 07:48:53'
   name: 'go to window'
-  version: '1.1'
+  version: 1.1.1
 -
   authors: cxreg
   contact: cxreg@pobox.com
@@ -1913,10 +1902,10 @@
   description: 'Have gpg-based trusting features in your irssi client!'
   filename: gpgvalidator.pl
   license: 'GPL v2'
-  modified: '2008-05-17 17:39:11'
-  name: 'gpgvalidator v. 0.1.2'
+  modified: '2018-12-31 13:43:04'
+  name: 'gpgvalidator v. 0.1.3'
   url: http://www.freaknet.org/~pallotron
-  version: 0.1.2
+  version: 0.1.3
 -
   authors: "David O'Rourke, Nico R. Wohlgemuth"
   contact: nico@lifeisabug.com
@@ -2208,6 +2197,15 @@
   name: iDonkey
   version: '2004051601'
 -
+  authors: 'Magnus Woldrich'
+  contact: m@japh.se
+  description: 'Ignore the blob of text displayed when (re)joining a channel'
+  filename: ignore_join_blob.pl
+  license: MIT
+  modified: '2019-01-24 09:01:46'
+  name: ignore_join_blob
+  version: '0.02'
+-
   authors: 'Dmitry "jsn" Kim'
   contact: jason@nichego.net
   description: 'script to log ignored messages'
@@ -2327,14 +2325,15 @@
   version: 0.6.1
 -
   authors: 'kodgehopper (kodgehopper@netscape.net)'
+  commands: end_game
   contact: kodgehopper@netscape.net
   description: 'Chess server for IRC. Allows for multiple 2-player games to be played simultaneously'
   filename: irc_chess.pl
   license: 'GNU GPL'
-  modified: '2014-10-17 22:54:13'
+  modified: '2019-05-04 15:20:01'
   name: IRC-Chess
-  url: 'none as yet'
-  version: '0.1'
+  url: http://irc-chess.sourceforge.net/
+  version: '0.2'
 -
   authors: 'Erkki Seppälä'
   commands: irccomplete_typowords
@@ -2386,10 +2385,10 @@
   description: 'secures your conversation'
   filename: ircsec.pl
   license: GPLv2
-  modified: '2008-05-25 13:44:01'
+  modified: '2019-02-11 13:59:43'
   modules: Crypt::CBC
   name: IRCSec
-  version: '2008051101'
+  version: '20190114'
 -
   authors: 'Valentin Batz'
   contact: vb\@g-23.org
@@ -2495,6 +2494,16 @@
   url: http://pieter-bas.ijdens.com/irssi/
   version: 1.0.0
 -
+  authors: Nei
+  contact: 'Nei @ anti@conference.jabber.teamidiot.de'
+  description: 'Adds a command to navigate to the previously active windows and an optional shortcut to go back when you try to switch to the current window. Think /window last²'
+  filename: jump.pl
+  license: ISC
+  modified: '2018-11-07 12:19:46'
+  name: jump
+  url: http://anti.teamidiot.de/
+  version: '1.1'
+-
   authors: Linostar
   commands: kbanref
   contact: linostar@sdf.org
@@ -2521,10 +2530,10 @@
   description: 'Try to get your nick back when it becomes available.'
   filename: keepnick.pl
   license: GPL
-  modified: '2014-10-17 22:54:13'
+  modified: '2019-05-04 20:18:06'
   name: keepnick
   url: http://ninja.no/irssi/keepnick.pl
-  version: '1.17'
+  version: '1.19'
 -
   authors: 'Gerfried Fuchs'
   commands: 'dekenny kenny'
@@ -2623,10 +2632,10 @@
   description: 'Remembers what people said last on what channels'
   filename: lastspoke.pl
   license: 'GNU GPLv2 or later'
-  modified: '2014-10-17 22:54:13'
+  modified: '2019-02-22 00:22:28'
   name: lastspoke
   url: http://irssi.freshdot.net/
-  version: '0.2'
+  version: '0.3'
 -
   authors: 'Clemens Heidinger'
   commands: len
@@ -2638,17 +2647,17 @@
   name: len
   version: 1.0.0
 -
-  authors: "Stefan 'tommie' Tomanek"
+  authors: "Stefan 'tommie' Tomanek, bw1"
   commands: leodict
-  contact: stefan@pico.ruhr.de
+  contact: bw1@aol.at
   description: 'translates via dict.leo.org'
   filename: leodict.pl
   license: GPLv2
-  modified: '2008-05-17 17:39:11'
-  modules: LWP::Simple
+  modified: '2019-03-21 10:55:22'
+  modules: 'Mojo::DOM Mojo::UserAgent'
   name: leodict
   url: http://irssi.org/scripts/
-  version: '20040515'
+  version: '20180321'
 -
   authors: 'Nico R. Wohlgemuth'
   commands: levelclear
@@ -2699,9 +2708,9 @@
   description: 'A simple mp3 display script that will display what mp3 you are playing in which software (mpg123, xmms, mp3blaster, etc) to your active channel or to a query window.'
   filename: listen.pl
   license: 'GNU GPLv2 or later'
-  modified: '2014-10-17 22:54:13'
+  modified: '2019-02-22 12:10:58'
   name: listen
-  version: '0.2'
+  version: '0.3'
 -
   authors: 'Isaac Good'
   contact: irssi@isaacgood.com
@@ -2738,7 +2747,7 @@
   description: 'convert mirc color and irssi interal formatting to ansi colors, useful for log filtering'
   filename: log2ansi.pl
   license: GPL
-  modified: '2008-05-22 13:14:17'
+  modified: '2010-02-13 13:59:47'
   name: log2ansi
   url: http://ninja.no/irssi/log2ansi
   version: '1.9'
@@ -2823,10 +2832,10 @@
   description: 'Polls your unix mailbox for new mail'
   filename: mailcheck_mbox_flux.pl
   license: 'Public Domain'
-  modified: '2014-10-19 11:54:16'
+  modified: '2019-02-23 14:25:18'
   name: 'Mail Check'
   url: http://xulfad.inside.org/~flux/software/irssi/
-  version: '0.1'
+  version: '0.2'
 -
   authors: 'Kimmo Lehto'
   commands: mail
@@ -2834,9 +2843,9 @@
   description: 'POP3 new mail notification and listing of mailbox contents. Use "/mail help" for instructions. Requires Net::POP3.'
   filename: mailcheck_pop3_kimmo.pl
   license: 'Public Domain'
-  modified: '2014-10-19 11:54:16'
+  modified: '2019-02-23 15:26:32'
   name: Mailcheck-POP3
-  version: '0.5'
+  version: '0.6'
 -
   authors: 'Marcin Rozycki'
   contact: derwan@irssi.pl
@@ -2875,9 +2884,9 @@
   description: 'Disables hilighting for messages containing a lot of nicknames'
   filename: mass_hilight_blocker.pl
   license: GPL
-  modified: '2016-04-26 17:27:32'
+  modified: '2018-11-11 16:14:40'
   name: mass_hilight_blocker
-  version: '0.3'
+  version: '0.4'
 -
   authors: 'Wouter Coekaerts'
   contact: coekie@irssi.org
@@ -3046,9 +3055,9 @@
   description: 'Keeps track of the channel mood'
   filename: mood.pl
   license: GPLv2
-  modified: '2008-05-17 17:39:11'
+  modified: '2019-01-05 10:14:23'
   name: Mood
-  version: '20031207'
+  version: '20190105'
 -
   authors: "Stefan 'tommie' Tomanek"
   commands: 'demorse despell morse spell'
@@ -3077,10 +3086,10 @@
   description: 'control irssi using mouse clicks and gestures'
   filename: mouse.pl
   license: 'GPLv2 or later'
-  modified: '2009-05-16 00:00:00'
+  modified: '2019-01-14 15:16:45'
   name: mouse
   url: http://wouter.coekaerts.be/irssi/
-  version: 1.0.0
+  version: 1.1.0
 -
   authors: 'Wouter Coekaerts'
   commands: mouse_xterm
@@ -3181,11 +3190,11 @@
   description: "logs url's to mysql database"
   filename: mysqlurllogger.pl
   license: GPLv2
-  modified: '2014-10-19 11:54:16'
+  modified: '2019-02-23 17:56:43'
   modules: DBI
   name: myssqlurllogger
   url: http://nchip.ukkosenjyly.mine.nu/irssiscripts/
-  version: '1.0'
+  version: '1.1'
 -
   authors: BC-bd
   commands: bw
@@ -3237,9 +3246,9 @@
   description: 'A simple nick banner. If it encounters a nick it bans its host'
   filename: nickban.pl
   license: 'Public Domain'
-  modified: '2014-10-19 11:54:16'
+  modified: '2019-02-23 21:37:15'
   name: nickban
-  version: '1.1'
+  version: '1.2'
 -
   authors: 'Timo Sirainen, Ian Peters, David Leadbeater, Bruno Cattáneo'
   commands: color
@@ -3501,10 +3510,10 @@
   description: "/on command - this is very simple and not really designed to be the same as ircII - it tries to fit into Irssi's usage style more than emulating ircII."
   filename: on.pl
   license: 'GNU GPLv2 or later'
-  modified: '2014-06-15 18:53:08'
+  modified: '2019-02-06 22:21:41'
   name: on.pl
   url: http://irssi.dgl.cx/
-  version: '1.12'
+  version: '1.13'
 -
   authors: "Stefan 'tommie' Tomanek"
   commands: ontv
@@ -3517,24 +3526,24 @@
   name: OnTV
   version: '20050226'
 -
-  authors: ''
-  contact: ''
-  description: "turns 'ls' in the beginning of a sent line into the names or whois commands"
+  authors: 'bw1 and others'
+  contact: bw1@aol.at
+  description: "turns 'll' and 'ls' in the beginning of a sent line into the names or whois commands"
   filename: oops.pl
   license: 'Public Domain'
-  modified: '2008-05-25 14:29:31'
+  modified: '2019-01-15 15:07:59'
   name: oops
-  version: '20071209'
+  version: '20180707'
 -
   authors: 'David Leadbeater'
   contact: dgl@dgl.cx
   description: 'Stops those silly mistakes being sent (spaces at start of line, /1/1 for window changes, etc).'
   filename: oopsie.pl
   license: 'WTFPL <http://dgl.cx/licence>'
-  modified: '2014-08-13 20:54:58'
+  modified: '2019-02-19 16:46:39'
   name: oopsie
   url: http://dgl.cx/irssi
-  version: '1.0'
+  version: '1.1'
 -
   authors: "Stefan 'tommie' Tomanek"
   commands: openurl
@@ -3983,9 +3992,9 @@
   description: 'Keeps last 15 messages in cache'
   filename: relm.pl
   license: 'GNU GPLv2 or later'
-  modified: '2014-10-19 11:54:16'
+  modified: '2019-02-25 10:29:22'
   name: 'REdirect Last Message'
-  version: '1.0'
+  version: '1.1'
 -
   authors: 'David Leadbeater'
   commands: remote
@@ -3993,10 +4002,10 @@
   description: 'Lets you run commands remotely via /msg and a password'
   filename: remote.pl
   license: 'GNU GPLv2 or later'
-  modified: '2014-10-19 11:54:16'
+  modified: '2019-02-25 21:11:57'
   name: remote
   url: http://irssi.dgl.cx/
-  version: '1'
+  version: '1.1'
 -
   authors: 'Isaac Good'
   commands: 'layout_load layout_save'
@@ -4108,9 +4117,9 @@
   description: 'Replaces :emote_name: text in your sent messages into pre-defined emotes (unicode mostly).'
   filename: rud_emotes.pl
   license: GPLv3
-  modified: '2016-11-07 15:43:52'
+  modified: '2019-03-19 21:57:04'
   name: 'emotes script'
-  version: '1.10'
+  version: '1.20'
 -
   authors: "Johan \"Ion\" Kiviniemi, idea taken from Riku Voipio's sana.pl"
   commands: sana
@@ -4123,6 +4132,16 @@
   name: sana-cmd
   url: http://ion.amigafin.org/irssi/
   version: '0.1'
+-
+  authors: Nei
+  contact: 'Nei @ anti@conference.jabber.teamidiot.de'
+  description: 'Saves the commands you typed in the input prompt to a history file, so that they persist across /upgrade and restart.'
+  filename: savecmdhist.pl
+  license: ISC
+  modified: '2018-11-07 14:02:31'
+  name: savecmdhist
+  url: http://anti.teamidiot.de/
+  version: '1.0'
 -
   authors: 'Simon Ruderich, Tom Feist'
   contact: 'simon@ruderich.org, shabble+irssi@metavore.org'
@@ -4159,10 +4178,10 @@
   description: '/schwäbisch - translates your messages from german to swabian'
   filename: schwaebisch.pl
   license: 'GNU GPL v2'
-  modified: '2008-05-17 17:39:09'
+  modified: '2019-01-30 22:52:13'
   name: Schwaebisch
   url: http://ftp.robert-scheck.de/linux/irssi/scripts/
-  version: 1.0.0
+  version: 1.0.1
 -
   authors: "Andreas 'ads' Scherbaum <ads@wars-nicht.de>"
   description: 'set (un)away, if screen is attached/detached'
@@ -4190,9 +4209,9 @@
   description: "Provides access to script's help"
   filename: scripthelp.pl
   license: 'GNU GPLv2 or later'
-  modified: '2014-10-24 23:01:30'
+  modified: '2019-02-27 20:56:42'
   name: 'Scripts help'
-  version: '0.9'
+  version: '0.10'
 -
   authors: Juerd
   contact: juerd@juerd.nl
@@ -4262,6 +4281,17 @@
   url: http://anti.teamidiot.de/
   version: '0.1'
 -
+  authors: 'Adrian Keet & John Sullivan'
+  contact: johnsullivan.pem@gmail.com
+  description: 'Implements the IRCv3 "server-time" capability'
+  filename: server_time.pl
+  license: MIT
+  modified: '2018-11-24 12:46:20'
+  modules: 'DateTime DateTime::TimeZone'
+  name: server_time
+  url: https://github.com/itsjohncs/irssi-server-time
+  version: '1.0'
+-
   authors: 'David Leadbeater'
   contact: dgl@dgl.cx
   description: 'Tab complete servers and userhosts (irc. -> irc server, user@ -> user@host). Useful for lazy ircops for /squit and so on :)'
@@ -4286,13 +4316,13 @@
 -
   authors: 'Rocco Caputo (dngor), Nei'
   contact: 'rcaputo@cpan.org, Nei @ anti@conference.jabber.teamidiot.de'
-  description: 'Irssi 1.0 settings notes and documentation'
+  description: 'Irssi 1.2 settings notes and documentation'
   filename: settingshelp.pl
   license: 'CC BY-SA 2.5, http://creativecommons.org/licenses/by-sa/2.5/'
-  modified: '2018-01-25 14:26:50'
+  modified: '2018-11-08 18:38:49'
   modules: LWP::Simple
   name: settingshelp
-  version: '1.0'
+  version: '1.2'
 -
   authors: 'Marcin Rozycki'
   commands: '42.pl shortenurl'
@@ -4686,9 +4716,9 @@
   description: 'displays a list of nicks in a separate tmux pane'
   filename: tmux-nicklist-portable.pl
   license: WTFPL
-  modified: '2018-05-25 22:18:13'
+  modified: '2019-02-07 00:08:18'
   name: tmux-nicklist
-  version: 0.1.7
+  version: 0.1.8
 -
   authors: cdidier
   description: 'set (un)away if tmux session is attached/detached'
@@ -4704,9 +4734,9 @@
   contact: 'vague!#irssi@freenode on irc'
   description: 'Toggle hidden levels on per window basis'
   filename: toggle_hidelevel.pl
-  modified: '2018-10-12 16:07:42'
+  modified: '2019-05-09 15:03:08'
   name: toggle_hidelevel
-  version: 0.5.1
+  version: 0.6.0
 -
   authors: bcattaneo
   commands: toilet
@@ -4931,11 +4961,11 @@
   description: 'Plugin to place text upsidedown'
   filename: upsidedown.pl
   license: 'GNU GPLv2'
-  modified: '2012-11-08 23:16:14'
+  modified: '2019-01-30 18:12:38'
   modules: Text::UpsideDown
   name: upsidedown
   url: https://github.com/Ivo-tje/Irssi-plugin-upsidedown
-  version: '0.2'
+  version: '0.3'
 -
   authors: 'Peder Stray'
   contact: peder@ninja.no
@@ -4953,22 +4983,22 @@
   description: 'logs urls to textfile or/and database, able to list, quote, open or `http head` saved urls.'
   filename: url_log.pl
   license: 'GNU GPLv2 or later'
-  modified: '2014-10-24 23:01:30'
+  modified: '2019-03-02 09:10:49'
   modules: 'DBI HTTP::Status LWP LWP::UserAgent'
   name: url_log
   url: http://irssi.reeler.org/url/
-  version: '0.2'
+  version: '0.3'
 -
   authors: 'Jakub Jankowski'
   contact: shasta@toxcorp.com
   description: 'Provides RSS feeds with URLs pasted on your channels.'
   filename: urlfeed.pl
   license: 'GNU GPLv2 or later'
-  modified: '2014-10-24 23:01:30'
-  modules: XML::RSS
+  modified: '2019-03-02 11:01:36'
+  modules: 'Regexp::Common XML::RSS'
   name: URLfeed
   url: http://toxcorp.com/irc/irssi/urlfeed/
-  version: '1.28'
+  version: '1.31'
 -
   authors: 'David Leadbeater'
   commands: url
@@ -5169,14 +5199,14 @@
   version: '1.4'
 -
   authors: 'Erik Fears'
-  commands: whos
+  commands: 'whos whoss'
   contact: strtok@softhome.net
   description: 'This script allows you to view all users on a specific server.'
   filename: whos.pl
   license: GPL
-  modified: '2008-05-17 17:39:09'
+  modified: '2019-02-21 18:32:39'
   name: whos
-  version: '1.00'
+  version: '1.01'
 -
   authors: 'Leszek Matok'
   commands: 'wiilm wilm'
@@ -5223,10 +5253,10 @@
   description: 'A simple word kickbanner'
   filename: wkb.pl
   license: 'Public Domain'
-  modified: '2014-10-24 23:01:30'
+  modified: '2019-03-02 20:57:01'
   name: wkb
   url: http://matin.maapallo.org/softa/irssi
-  version: '1.1'
+  version: '1.2'
 -
   authors: 'Jesper Lindh'
   commands: 'delword sql_connect sql_disconnect'
