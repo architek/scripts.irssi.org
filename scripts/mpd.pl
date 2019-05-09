@@ -68,8 +68,8 @@ sub np {
         return;
     }
 
-    $MPD{'port'}     = Irssi::settings_get_str('mpd_port');
-    $MPD{'host'}     = Irssi::settings_get_str('mpd_host');
+    $MPD{'port'}     = Irssi::settings_get_int('mpd_port');
+    ($MPD{'host'}     = Irssi::settings_get_str('mpd_host')) =~ s/.*@//;
     $MPD{'password'} = Irssi::settings_get_str('mpd_password');
     $MPD{'timeout'}  = Irssi::settings_get_str('mpd_timeout');
     $MPD{'format'}   = Irssi::settings_get_str('mpd_format');
@@ -214,7 +214,7 @@ USAGE
 
 
 Irssi::settings_add_str('mpd', 'mpd_host', 'localhost');
-Irssi::settings_add_str('mpd', 'mpd_port', '6600');
+Irssi::settings_add_int('mpd', 'mpd_port', 6600);
 Irssi::settings_add_str('mpd', 'mpd_password', '');
 Irssi::settings_add_str('mpd', 'mpd_timeout', '5');
 Irssi::settings_add_str('mpd', 'mpd_format', 'np: %ARTIST - %TITLE');
