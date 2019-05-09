@@ -80,7 +80,7 @@ use Irssi::TextUI;
 use strict;
 use vars qw($VERSION %ENABLED %SAVE_VARS %IRSSI %COUNT %SET);
 
-$VERSION = '0.0.0n';
+$VERSION = '0.0.0o';
 %IRSSI = (
 	  authors     => 'Santabutthead',
 	  contact     => 'starz@antisocial.com',
